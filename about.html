@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Project Website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+        
+        <link href="index.html" >
+        <link href="home.html">
+        <link href="about.html">
+        <link href="contact.html">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html?">iCoder </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Topics
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Technology</a></li>
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li><a class="dropdown-item" href="#">Support</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Write for Us</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/Contact.html">Contact Us</a>
+          </li>
+
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-1 " type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="mx-3">
+        <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+
+        <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+
+      </div>
+    </div>
+  </nav>
+
+  <!--Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to iCoder Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <div class="modal-body">
+          <div class="mb-3 row">
+            <label for="dynamicstaticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="text"  class="form-control" id="dynamicEmail" value="email@example.com">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword">
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title" id="signupModalLabel">Get an iCoder Account</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+
+  <div class="modal-body">
+    <div class="mb-3 row">
+      <label for="dynamicstaticEmail" class="col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="text"  class="form-control" id="dynamicEmail" value="email@example.com">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputPassword" >Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword">
+      </div>
+    </div>
+    <div class="mb-3 row" my-2>
+      <label for="cinputPassword" class="col-form-label">Confirm Password</label>
+      <div class="col-sm-10">
+        <input type="cpassword" class="form-control" id="cinputPassword">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+    <button type="button" class="btn btn-primary">Create Account</button>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="container my-5 mx-7">
+  <div class="row featurette d-flex justify-content-center align-items-center">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1">It's all started with iCoder Idea. <span class="text-muted">It'll blow your mind.</span></h2>
+      <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+    </div>
+    <div class="col-md-5">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " width ="400" height="900" src="https://media.istockphoto.com/photos/business-woman-stock-photo-picture-id1300311699?k=20&m=1300311699&s=612x612&w=0&h=Lj0mTyEcaOg9YYCCrRnFWZGAsWV3lpDR7Ex7gq00uCo=" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+    </div>
+  </div>
+  <hr class="featurette-divider">
+
+  <div class="row featurette d-flex justify-content-center align-items-center">
+    <div class="col-md-7 order-md-1">
+      <h2 class="featurette-heading fw-normal lh-1"> We started iCoder in 1990. <span class="text-muted">It'll blow your mind.</span></h2>
+      <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+    </div>
+    <div class="col-md-5 ">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " width ="400" height="900" src="https://media.istockphoto.com/photos/hand-of-god-picture-id488572441?k=20&m=488572441&s=612x612&w=0&h=tZGZpEFEC6YAQ0DAWo7u6KawL7N3UEs7Bx49y95zsSA=" alt="" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+    </div>
+  </div>
+   <hr class="featurette-divider">
+
+  <div class="row featurette d-flex justify-content-center align-items-center">
+    <div class="col-md-7" >
+      <h2 class="featurette-heading fw-normal lh-1">Project Management. <span class="text-muted">It'll blow your mind.</span></h2>
+      <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+    </div>
+    <div class="col-md-5 ">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " width ="400" height="900" src="https://media.istockphoto.com/photos/best-business-concept-photo-representing-brainstorm-in-the-company-picture-id876997894?k=20&m=876997894&s=612x612&w=0&h=Si1qHRyQJu-LVrtiW0EzsO0mWGV7cr60K6wZJY1BzUM="  alt="" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette d-flex justify-content-center align-items-center">
+    <div class="col-md-7 order-md-2" >
+      <h2 class="featurette-heading fw-normal lh-1">Global Awards. <span class="text-muted">It'll blow your mind.</span></h2>
+      <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+    </div>
+    <div class="col-md-5 ">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " width ="400" height="900" src="https://media.istockphoto.com/photos/workplace-recognition-makes-all-the-difference-picture-id1056359860?k=20&m=1056359860&s=612x612&w=0&h=HeO7eWSz9ERm0gvC--ckwOSiiz-cDclAvbmpsfldQD8=" alt="" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+    </div>
+  </div>
+  
+  <hr class="featurette-divider">
+
+  <div class="row featurette d-flex justify-content-center align-items-center">
+    <div class="col-md-7" >
+      <h2 class="featurette-heading fw-normal lh-1">Offer Letter. <span class="text-muted">It'll blow your mind.</span></h2>
+      <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+    </div>
+    <div class="col-md-5 ">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " width ="400" height="900" src="https://media.istockphoto.com/photos/smiling-indian-woman-holding-reading-paper-letter-sit-at-table-picture-id1198252572?k=20&m=1198252572&s=612x612&w=0&h=Zu4hTaV0VAYl_9XyhlG1_8EvcItJpF9tKM6PY1dqJjA=" alt="" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+</div>
+ 
+
+<footer class="container">
+  <p class="float-end"><a href="#">Back to top</a></p>
+  <p>© 2021–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"></script>
+
+</body>
+
+</html>
